@@ -7,7 +7,9 @@ ENV EUREKA_URL=http://localhost:3150/eureka/
 
 ENTRYPOINT ["java",
             "-DEUREKA_INSTANCE_HOSTNAME=${HOSTNAME}",
-            "-DEUREKA_CLIENT_SERVICE_DEFAULTZONE=${EUREKA_URL}
- ,"-jar", "app.jar"]
+            "-DEUREKA_CLIENT_SERVICE_DEFAULTZONE=${EUREKA_URL}",
+            "-jar",
+            "app.jar"]
+
 
 EXPOSE 3000
